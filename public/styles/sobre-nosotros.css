@@ -1,0 +1,212 @@
+
+
+/* Showcase */
+.showcase {
+    position: relative;
+    width: 100%;
+    height: 80vh; /* Ocupa toda la altura de la pantalla */
+    overflow: hidden;
+}
+
+.showcase img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajusta la imagen para que cubra todo sin deformarse */
+}
+
+.showcase .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.showcase h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.showcase p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.showcase a {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background: #007bff;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background 0.3s ease;
+}
+
+.showcase a:hover {
+    background: #0056b3;
+}
+
+
+
+  /* Títulos */
+  .company__title {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    color: #d8d8d8;
+  }
+  
+  .company__text {
+    text-align: center;
+  }
+
+  .company__title i {
+    color:  #75c99e;
+    margin-right: 1rem;
+  }
+  
+  /* Sección: Sobre la Empresa */
+  .company__about {
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    text-align: left;
+    background-color: #086944;
+  }
+  
+  .company__content {
+    flex: 1;
+  }
+  
+  .company__img {
+    padding: 3rem;
+    width: 50%;
+    border-radius: 1.4rem;
+    transition: transform 0.3s ease;
+  }
+  
+  .company__img:hover {
+    transform: scale(1.05);
+  }
+
+  .company__goals {
+    padding: 4rem;
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/body.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+  }
+
+  .company__title {
+    color: white;
+  }
+  
+  /* Objetivos - Grid */
+  .company__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 2rem;
+  }
+  
+  /* Estilos de las Cards */
+  .company__card {
+    background:  #1ca973;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .company__card:hover {
+    transform: translateY(-0.5rem);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Iconos en Objetivos */
+  .company__icon {
+    font-size: 3rem;
+    color:  #91d2b1;
+    margin-bottom: 1rem;
+  }
+
+  .company__card h3 {
+    color: white !important;
+  }
+
+  .company__card p {
+    color: #363636 !important;
+  }
+  
+  
+  /* Misión y Visión */
+  .company__mission {
+    background: #086944;
+    color: white;
+    padding: 5rem;
+  }
+  
+  .company__text {
+    line-height: 1.6;
+     color: #d8d8d8;
+  }
+  
+  /* Sección del Equipo */
+  .company__team {
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/body.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 6rem;
+  }
+  
+  /* Cards del Equipo */
+  .team__card {
+    background-color: #1ca973;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .team__card:hover {
+    transform: translateY(-0.5rem);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Imágenes del Equipo */
+  .team__img {
+    width: 100%;
+    height: 12rem;
+    object-fit: cover;
+    border-radius: 1rem;
+    transition: transform 0.3s ease;
+  }
+  
+  .team__card:hover .team__img {
+    transform: scale(1.05);
+  }
+  
+  /* Nombre y rol */
+  .team__name {
+    color: white;
+    margin: 1rem 0;
+  }
+  
+  .team__role {
+    color: #d8d8d8;
+  }

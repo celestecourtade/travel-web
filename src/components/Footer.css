@@ -1,0 +1,100 @@
+
+
+/* Footer */
+.footer {
+    background: #222;
+    color: #fff;
+    padding: 3rem 0 1rem;
+    font-size: 1rem;
+}
+
+.footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Cuatro columnas */
+    gap: 2rem;
+}
+
+.footer-section h3,
+.footer-section h4 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    color: #f9a825; /* Color dorado */
+}
+
+.footer-section p {
+    margin-bottom: 0.5rem;
+}
+
+/* Enlaces rápidos */
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: #f9a825;
+}
+
+/* Redes Sociales */
+.social-icons {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-icons a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: #333;
+    color: #fff;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.social-icons a:hover {
+    transform: scale(1.1);
+}
+
+/* Colores específicos para cada red social */
+.facebook:hover {
+    background: #1877F2;
+}
+
+.instagram:hover {
+    background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+}
+
+.whatsapp:hover {
+    background: #25D366;
+}
+
+.youtube:hover {
+    background: #FF0000;
+}
+
+/* Copyright */
+.footer-bottom {
+    text-align: center;
+    padding: 1rem 0;
+    border-top: 1px solid #444;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+}

@@ -1,0 +1,90 @@
+/* Navbar transparente */
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2.5rem 2rem;
+    background: transparent;
+    z-index: 1000;
+}
+
+/* Menú en el centro (desktop) */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links li {
+    text-align: center;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.nav-links a:hover {
+    color: #1ca973;
+}
+
+/* Nombre del hotel en la esquina inferior izquierda */
+.navbar-brand {
+    position: absolute;
+    bottom: 2rem;
+    left: 2rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* Menú hamburguesa */
+.menu-toggle {
+    display: none; /* Oculto por defecto */
+    flex-direction: column;
+    cursor: pointer;
+    position: absolute;
+    right: 2rem;
+}
+
+.menu-toggle div {
+    width: 2rem;
+    height: 0.2rem;
+    background-color: white;
+    margin: 0.4rem 0;
+}
+
+/* ======= Responsive: cuando la pantalla es pequeña ======= */
+@media (max-width: 768px) {
+  /* Oculto el menú horizontal */
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 60px; /* Ajustá según el alto de tu navbar */
+    right: 2rem;
+    background-color: rgba(0,0,0,0.8);
+    flex-direction: column;
+    width: 150px;
+    border-radius: 8px;
+    padding: 1rem;
+  }
+
+  /* Cuando está activo (se abrió) lo muestro */
+  .nav-links.active {
+    display: flex;
+  }
+
+  /* Muestro el botón hamburguesa */
+  .menu-toggle {
+    display: flex;
+  }
+}

@@ -1,0 +1,82 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+---
+
+<BaseLayout>
+    <slot name="head">
+        <!-- Aquí puedes agregar CSS o scripts personalizados si es necesario -->
+        <link rel="stylesheet" href="/styles/sobre-nosotros.css">
+      </slot>
+  <!-- Sección: Showcase -->
+  <div class="showcase">
+    <img src="../img/portadas.jpg" alt="Hotel Seasons">
+    <div class="content">
+      <h1>Nosotros</h1>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores, magni!</p>
+    </div>
+  </div>
+
+  <!-- Sección: Sobre la Empresa -->
+  <section class="company__about">
+    <div class="company__content">
+      <h2 class="company__title"><i class="fas fa-map-marked-alt"></i> Sobre Nosotros</h2>
+      <p class="company__text">
+        Bienvenidos a <strong>Explora Iguazú</strong>, tu guía de confianza para descubrir la majestuosidad de Puerto Iguazú, Misiones. Nos especializamos en crear experiencias inolvidables en contacto con la naturaleza, explorando las Cataratas del Iguazú y su entorno.
+      </p>
+    </div>
+    <img src="../img/cataratas-tour.jpg" alt="Empresa de turismo" class="company__img">
+  </section>
+
+  <!-- Sección: Objetivos de la Empresa -->
+  <section class="company__goals">
+    <h2 class="company__title"><i class="fas fa-bullseye"></i> Nuestros Objetivos</h2>
+    <div class="company__grid">
+      <div class="company__card">
+        <i class="fas fa-seedling company__icon"></i>
+        <h3 class="company__card-title">Turismo Sostenible</h3>
+        <p>Fomentamos un turismo responsable que respeta el ecosistema único de Puerto Iguazú.</p>
+      </div>
+      <div class="company__card">
+        <i class="fas fa-hand-holding-heart company__icon"></i>
+        <h3 class="company__card-title">Experiencias Auténticas</h3>
+        <p>Diseñamos excursiones y actividades que permiten a nuestros viajeros conectar con la cultura local.</p>
+      </div>
+      <div class="company__card">
+        <i class="fas fa-users company__icon"></i>
+        <h3 class="company__card-title">Compromiso con el Cliente</h3>
+        <p>Nos enfocamos en ofrecer calidad, seguridad y satisfacción en cada aventura.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección: Misión y Visión -->
+  <section class="company__mission">
+    <h2 class="company__title"><i class="fas fa-globe"></i> Misión y Visión</h2>
+    <p class="company__text">
+      Nuestra misión es brindar a cada viajero una experiencia inolvidable en Puerto Iguazú, promoviendo el ecoturismo y el respeto por el medio ambiente. Nuestra visión es convertirnos en la agencia líder en turismo sostenible en la región.
+    </p>
+  </section>
+
+  <!-- Sección: Nuestro Equipo -->
+  <section class="company__team">
+    <h2 class="company__title"><i class="fas fa-users"></i> Nuestro Equipo</h2>
+    <div class="company__grid">
+      <div class="team__card">
+        <img src="/public/img/team3.jpg" alt="Guía turístico" class="team__img">
+        <h3 class="team__name">Santiago Pérez</h3>
+        <p class="team__role">Guía Turístico</p>
+      </div>
+      <div class="team__card">
+        <img src="/public/img/team1.jpg" alt="Atención al Cliente" class="team__img">
+        <h3 class="team__name">María López</h3>
+        <p class="team__role">Atención al Cliente</p>
+      </div>
+      <div class="team__card">
+        <img src="/public/img/team2.jpg" alt="Coordinador Logístico" class="team__img">
+        <h3 class="team__name">Ana Ramírez</h3>
+        <p class="team__role">Coordinador Logístico</p>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

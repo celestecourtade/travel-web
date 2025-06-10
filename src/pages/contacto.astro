@@ -1,0 +1,45 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout>
+    <slot name="head">
+        <!-- Aquí puedes agregar CSS o scripts personalizados si es necesario -->
+        <link rel="stylesheet" href="public/styles/contacto.css">
+      </slot>
+
+      <div class="showcase">
+        <div class="content">
+            <h1>Contacto</h1>
+        </div>
+    </div>
+
+
+
+ <!-- Mapa en el lado izquierdo -->
+
+ <div class="section">
+    <div class="mapa-container">
+        <iframe 
+            src="https://www.google.com/maps?q=40.713688,-73.992750&hl=es&z=14&output=embed">
+        </iframe>
+    </div>
+
+    <!-- Información de contacto en el lado derecho -->
+    <div class="info-container">
+        <h2>TRAVEL EXPLORER</h2>
+
+        <p><i class="fas fa-map-marker-alt"></i> P° de la Castellana 79, Madrid, 28046</p>
+        <p><i class="fas fa-phone"></i> <strong>Teléfono:</strong> (+34) 947 002 963</p>
+        <p><i class="fas fa-envelope"></i> <strong>Email:</strong> demo@webnode.com</p>
+        <p><i class="fas fa-map-pin"></i> <strong>GPS:</strong> 40.713688, -73.992750</p>
+
+        <!-- Redes sociales -->
+        <div class="redes-sociales">
+            <a href="#"><i class="fab fa-facebook"></i> Facebook</a>
+            <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+        </div>
+    </div>
+ </div>
+
+</BaseLayout>

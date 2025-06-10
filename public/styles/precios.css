@@ -1,0 +1,120 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+* {
+
+    box-sizing: border-box;
+    margin:0; 
+    padding:0;
+    list-style: none;
+    text-decoration: none !important;
+    border: none;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/portadas.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+h2 {
+    font-family: "Patua One", serif;
+  
+  }
+  
+  h3 {
+    font-family: "Roboto", serif;
+  
+  }
+  
+  p {
+    font-family: "Montserrat", serif;
+  
+  }
+  
+  
+
+/* Showcase */
+
+.pricing {
+    padding-bottom: 4rem;
+    padding-top: 4rem;
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  .pricing-title {
+    padding-top: 6rem;
+    text-align: center;
+    font-size: 2rem; 
+    margin-bottom: 1.25rem;
+    color: #ffffff;
+  }
+  
+  .pricing-title i {
+    color: #1ca973;
+    margin-right: 0.3rem;
+  }
+  
+  /* Estilos de cada fila */
+  .pricing-item {
+    display: table;
+    width: 100%;
+    padding: 0.9375rem 0; /* 15px */
+    border-bottom: 0.0625rem solid #ddd; /* 1px */
+  }
+  
+  /* Columnas alineadas */
+  .pricing-item span, 
+  .pricing-item button {
+    display: table-cell;
+    padding: 0.625rem; /* 10px */
+    vertical-align: middle;
+  }
+  
+  /* Espaciado entre columnas */
+  .pricing-night {
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+    width: 15%;
+    font-size: 1.5rem;/* 18px */
+    color: #05ff9f;
+    font-family: "Lilita One", serif;
+  }
+  
+  .pricing-desc {
+    width: 50%;
+    font-size: 1rem; /* 16px */
+    color: #ffffff;
+  }
+  
+  .pricing-price {
+    width: 15%;
+    font-size: 2rem; /* 18px */
+    font-weight: bold;
+    color: #20dd94;
+    text-align: center;
+  }
+  
+  .pricing-btn {
+    width: 50%;
+    background: #1ca973;
+    color: white;
+    border: none;
+    padding: 0.5rem; /* 8px */
+    font-size: 1rem; /* 16px */
+    cursor: pointer;
+    margin-top: 1.5rem;
+  }
+  
+  .pricing-btn:hover {
+    background: #018251;
+  }
+

@@ -1,0 +1,50 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout>
+    <slot name="head">
+        <!-- Aquí puedes agregar CSS o scripts personalizados si es necesario -->
+        <link rel="stylesheet" href="public/styles/precios.css">
+      </slot>
+
+      <section class="pricing">
+        <h2 class="pricing-title"><i class="fas fa-euro-sign"></i> Tarifas de Excursiones</h2>
+      
+        <div class="pricing-item">
+          <span class="pricing-night">Cataratas del Iguazu - AR</span>
+          <span class="pricing-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus voluptatum sequi tempora, necessitatibus accusantium nobis.</span>
+          <span class="pricing-price">100 €</span>
+          <button class="pricing-btn">Contratar</button>
+        </div>
+      
+        <div class="pricing-item">
+          <span class="pricing-night">Puerto Iguazu</span>
+          <span class="pricing-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores sit beatae voluptate impedit, praesentium nostrum!</span>
+          <span class="pricing-price">200 €</span>
+          <button class="pricing-btn">Contratar</button>
+        </div>
+      
+        <div class="pricing-item">
+          <span class="pricing-night">Cataratas del Iguazu -BR</span>
+          <span class="pricing-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, cupiditate at aliquam iusto suscipit odio.</span>
+          <span class="pricing-price">400 €</span>
+          <button class="pricing-btn">Contratar</button>
+        </div>
+      
+        <div class="pricing-item">
+          <span class="pricing-night">Minas de Wanda</span>
+          <span class="pricing-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas iste expedita quibusdam? Quae, velit dolorem!</span>
+          <span class="pricing-price">600 €</span>
+          <button class="pricing-btn">Contratar</button>
+        </div>
+      
+        <div class="pricing-item">
+          <span class="pricing-night">Ruinas de san ignacio</span>
+          <span class="pricing-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi laboriosam ab veritatis! Quos, ut. Vel!</span>
+          <span class="pricing-price"> 400 €</span>
+          <button class="pricing-btn">Contratar</button>
+        </div>
+      </section>
+
+</BaseLayout>

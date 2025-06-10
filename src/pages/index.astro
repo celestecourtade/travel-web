@@ -1,0 +1,143 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Travel Explorer" description="Explorá el mundo con nosotros">
+  <slot name="head">
+    <!-- Aquí puedes agregar CSS o scripts personalizados si es necesario -->
+    <link rel="stylesheet" href="public/styles/index.css">
+  </slot>
+
+
+        <!--- SHOWCASE -->
+
+        <div class="showcase">
+          <video autoplay muted loop>
+              <source src="public/videos/portada.mp4" type="video/mp4">
+              Tu navegador no soporta videos.
+          </video>
+          <div class="content">
+              <h1>Travel Explorer</h1>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis, commodi?.</p>
+          </div>
+      </div>
+
+
+
+      <section id="sobre-nosotros" class="sobre-nosotros">
+          <div class="contenedor-nosotros">
+              <div class="texto-nosotros">
+                  <h2>Sobre Nosotros</h2>
+                  <p>Somos una empresa dedicada a ofrecer experiencias inolvidables a los viajeros. Con años de experiencia en el sector, diseñamos paquetes turísticos adaptados a cada necesidad, asegurando confort y aventura en cada destino.</p>
+                  <a href="#contacto" class="btn-nosotros">Contáctanos</a>
+              </div>
+              <div class="imagen-nosotros">
+                  <img src="img/sobre-nosotros.jpg" alt="Equipo de la empresa de turismo">
+              </div>
+          </div>
+      </section>
+
+      <!-- SECCIÓN NUESTROS SERVICIOS -->
+<section id="servicios" class="servicios">
+  <div class="container">
+      <h2 class="titulo">Nuestros Servicios</h2>
+      <p class="subtitulo">Explora Puerto Iguazú y Cataratas con nuestros servicios exclusivos.</p>
+
+      <div class="servicios-grid">
+      <!-- Servicio 1: Tours Guiados -->
+      <div class="servicio">
+          <i class="fas fa-map-marked-alt"></i>
+          <h3>Tour Guiado</h3>
+          <p>Descubre los mejores paisajes con guías expertos.</p>
+      </div>
+
+      <!-- Servicio 2: Alquiler de Autos -->
+      <div class="servicio">
+          <i class="fas fa-car"></i>
+          <h3>Alquiler de Autos</h3>
+          <p>Muévete a tu ritmo con nuestra flota de vehículos.</p>
+      </div>
+
+      <!-- Servicio 3: Paquetes Personalizados -->
+      <div class="servicio">
+          <i class="fas fa-suitcase-rolling"></i>
+          <h3>Paquetes Personalizados</h3>
+          <p>Arma tu experiencia a medida con actividades únicas.</p>
+      </div>
+  </div>
+</div>
+</section>
+
+
+  <!--- destinos -->
+
+  <section class="destinos-background">
+    <div class="titulo-class">
+      <h2>Destinos</h2>
+    </div>
+  <div class="gallery-image">
+    <div class="img-box">
+      <img src="/public/img/cataratas.jpg" alt="" />
+      <div class="transparent-box">
+        <div class="caption">
+          <p>Cataratas del Iguazu</p>
+          <p class="opacity-low">Lado Argentino</p>
+        </div>
+      </div> 
+    </div>
+    <div class="img-box">
+      <img src="/public/img/cataratas-tour.jpg" alt="" />
+      <div class="transparent-box">
+        <div class="caption">
+          <p>Cataratas del Iguazu</p>
+          <p class="opacity-low">Lado Brasilero</p>
+        </div>
+      </div>
+    </div>
+    <div class="img-box">
+      <img src="/public/img/cataratas14.jpg" alt="" />
+      <div class="transparent-box">
+        <div class="caption">
+          <p>Tea Talk</p>
+          <p class="opacity-low">Lorem ipsum dolor sit amet.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="img-box">
+      <img src="/public/cataratas24.jpg" alt="" />
+      <div class="transparent-box">
+        <div class="caption">
+          <p>Road</p>
+          <p class="opacity-low">Lorem ipsum dolor sit.
+          </p>
+        </div>
+      </div> 
+    </div>
+    <div class="img-box">
+      <img src="/public/img/1.jpg" alt="" />
+      <div class="transparent-box">
+        <div class="caption">
+          <p>Sea</p>
+          <p class="opacity-low">Lorem ipsum dolor sit.
+          </p>
+        </div>
+      </div> 
+    </div>
+    <div class="img-box">
+      <img src="/public/img/cataratas2.jpg" alt="" />
+      <div class="transparent-box">
+        <div class="caption">
+          <p>Vintage</p>
+          <p class="opacity-low">Lorem ipsum dolor
+          </p>
+        </div>
+      </div> 
+    </div>
+  </div>
+  </section>
+
+
+                  
+  
+</BaseLayout>
